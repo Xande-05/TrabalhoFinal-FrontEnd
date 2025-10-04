@@ -266,3 +266,50 @@ ul a:active {
         padding-left: 0;
     }
 }
+
+.secao-curso{
+    position: relative;
+    height: 1000px;
+    background-color: antiquewhite;
+    color: #a71559;
+}
+
+.imagem{
+    position: absolute;
+    border-bottom: 4px solid #a71559;
+}
+
+.layout-video{
+    position: absolute;
+    top: 320px;
+    left: 0;
+    border: 1px solid #a71559;
+    height: 640px;
+    width: 100%;
+}
+
+.video-background{
+    display: inline;
+}
+
+.apresentacao{
+    position: absolute;
+    display: inline;
+    right: 50px;
+}
+
+.apresentacao > li{
+    display: inline;
+    border: 1px solid black;
+    width: 100px;
+}
+.titulo{
+    font-size: 60px;
+}
+
+.subtitulo{
+    font-size: 20px;
+
+}
+
+
