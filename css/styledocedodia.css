@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: cornsilk;
+    color: #a71559;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: pink;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    color: #a71559;
+    text-align: center;
+}
+.foto-brownie {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    display: block;
+}
+h2 {
+    color:#a71559;
+    border-bottom: 2px solid cornsilk;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+ul, ol {
+    padding-left: 20px;
+    justify-content: center;
+    text-align: left;
+   
+
+}
+
+.tempo {
+    font-weight: bold;
+    color:#a71559; 
+}
