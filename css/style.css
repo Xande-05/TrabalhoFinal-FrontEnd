@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    color: #a71559;
+    background-color:cornsilk;
+}
+
+a {
+    text-decoration: none;
+    color: #a71559; 
+    
+}
+
+
+.card {
+      line-height: 30px;
+      margin: 15px;
+}
+
+.destaques h2{
+    margin: 15px;
+     animation-name: piscando; /* Nome da animação */
+    animation-duration: 1.5s; /* Duração do ciclo de piscar */
+    animation-iteration-count: infinite; /* **Repete infinitamente** */
+    animation-timing-function: ease-in-out;
+}
+
+/* --- CABEÇALHO E NAVEGAÇÃO --- */
+.cabecalho {
+    background-color: cornsilk;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    font-style: italic;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: rgb(203, 39, 115); 
+    
+    /* PROPRIEDADES DA ANIMAÇÃO */
+    animation-name: piscando; /* Nome da animação */
+    animation-duration: 1.5s; /* Duração do ciclo de piscar */
+    animation-iteration-count: infinite; /* **Repete infinitamente** */
+    animation-timing-function: ease-in-out; /* Suaviza o início e o fim da transição */
+}
+/* ANIMAÇÃO PARA O LOGO PISCANTE */
+@keyframes piscando {
+    0% {
+        opacity: 1; /* Totalmente visível no início */
+    }
+    50% {
+        opacity: 0.2; /* Quase invisível na metade da animação */
+    }
+    100% {
+        opacity: 1; /* Totalmente visível no final (e volta a 0% para repetir) */
+    }
+}
+
+.menu ul li a {
+    color: #a71559;
+    font-weight: 500;
+    transition: all 0.3s ease; /* Transição para cor e fundo */
+    
+    /* PROPRIEDADES PARA O ARREDONDAMENTO */
+    padding: 8px 15px; /* Adiciona padding interno para o link ter área */
+    border: 1px solid transparent; /* Borda transparente inicial */
+    border-radius: 20px; /* **TORNA O ELEMENTO ARREDONDADO** */
+}
+
+.menu ul li a:hover {
+    color: #fff; /* Texto branco no hover */
+    background-color: pink; 
+    border-color: #a71559; /* Borda da mesma cor do fundo */
+}
+/* 1. Estilizando o Link Básico para remover o sublinhado padrão */
+/* Você pode precisar ajustar o seletor (ex: .nav-principal a) */
+ul a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: #444;          /* Garante uma cor escura, troque se necessário */
+    display: block;       /* Faz com que todo o <li> seja a área clicável */
+    padding: 5px 0;       /* Adiciona um pouco de espaço interno, se aplicável */
+}
+
+/* 2. Efeito ao PASSAR o mouse (HOVER) */
+ul a:hover {
+    color: #FF69B4; /* Por exemplo, mude a cor para um rosa vibrante */
+    opacity: 0.8;   /* Deixa o item levemente transparente para indicar interação */
+}
+
+/* 3. Efeito ao CLICAR ou Tocar (ACTIVE) */
+ul a:active {
+    /* Diminui levemente o item para dar um efeito de "pressão" */
+    transform: scale(0.98); 
+    transition: transform 0.1s ease-out; /* Adiciona uma transição suave */
+}
+
+/* 4. Estilizando os Ícones para espaçamento */
+/* (Já fizemos isso, mas repetindo para garantir) */
+.fa-solid {
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+/* --- SEÇÃO PRINCIPAL (HOME) --- */
+.banner-principal {
+    position: relative; /* Necessário para posicionar o texto e a assinatura */
+    text-align: center;
+}
+
+.imagem-banner {
+    width: 100%;
+    height: 450px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Garante que a imagem cubra a área sem distorção */
+}
+
+.texto-banner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: cornsilk;
+    background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente para o texto */
+    padding: 20px 40px;
+    border-radius: 8px;
+}
+
+.autor-assinatura {
+    position: absolute;
+    bottom: 20px; /* Posição abaixo da imagem */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: cornsilk;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-style: italic;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #a71559;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+/* --- ANIMAÇÃO (REQUISITO) --- */
+
+/* Esconde o texto inicialmente */
+.titulo-animado, .subtitulo-animado {
+    opacity: 0;
+}
+
+/* ANIMAÇÃO DE FADE-IN (APARECER SUAVEMENTE) */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.titulo-animado {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    /* Aplica a animação: 1.5s de duração, ease-out, só uma vez, atraso de 0.5s */
+    animation: fadeInDown 1.5s ease-out 0.5s forwards; 
+}
+
+.subtitulo-animado {
+    font-size: 1.3em;
+    /* Aplica a animação: 1.5s de duração, ease-out, só uma vez, atraso de 1.5s (depois do título) */
+    animation: fadeInDown 1.5s ease-out 1.5s forwards;
+}
+
+/* --- RODAPÉ ESTILIZADO (NOVO) --- */
+.rodape {
+    background-color: pink; /* Cor escura institucional (azul marinho/cinza) */
+    color: cornsilk; /* Texto claro */
+    padding-top: 40px;
+    font-size: 0.9em;
+}
+
+.rodape a {
+    color: #a71559; /* Cor de destaque (laranja/dourado) para links no rodapé */
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 30px 20px;
+    flex-wrap: wrap; /* Permite quebras em telas menores */
+}
+
+.rodape-institucional, .rodape-links, .rodape-social {
+    
+    width: 30%; /* Distribuição em 3 colunas */
+    min-width: 250px; /* Para garantir que não fiquem muito estreitos */
+    margin-bottom: 20px;
+    color: #a71559
+}
+
+.rodape-conteudo h3 {
+    color: #a71559;
+    margin-bottom: 15px;
+    border-bottom: 2px solid cornsilk;
+    padding-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.rodape-institucional p, .rodape-links li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.rodape-links ul {
+    list-style: none;
+}
+
+.rodape-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo dos ícones sociais */
+.social-icones a {
+    display: block; /* Cada link em uma nova linha */
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.social-icones a:hover {
+    color: #fff; /* Muda a cor ao passar o mouse */
+}
+
+/* Direitos Autorais (Barra Inferior) */
+.rodape-direitos {
+    background-color: #a71559; /* Cor mais escura para a barra de direitos */
+    text-align: center;
+    padding: 15px 20px;
+    border-top: 1px solid #a71559;
+}
+
+/* Media Query para Responsividade em dispositivos menores */
+@media (max-width: 768px) {
+    .rodape-conteudo {
+        flex-direction: column; /* Empilha as colunas verticalmente */
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape-institucional, .rodape-links, .rodape-social {
+        width: 90%; 
+        margin-bottom: 25px;
+    }
+    
+    .rodape-links ul {
+        padding-left: 0;
+    }
+}
