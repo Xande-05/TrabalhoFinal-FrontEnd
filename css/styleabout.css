@@ -1,0 +1,97 @@
+body {
+    font-family: sans-serif;
+    color: #a71559;
+    background-color:cornsilk;
+}
+.cabecalho img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* --- RODAPÉ ESTILIZADO (NOVO) --- */
+.rodape {
+    background-color: pink; /* Cor escura institucional (azul marinho/cinza) */
+    color: cornsilk; /* Texto claro */
+    padding-top: 40px;
+    font-size: 0.9em;
+}
+
+.rodape a {
+    color: #a71559; /* Cor de destaque (laranja/dourado) para links no rodapé */
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 30px 20px;
+    flex-wrap: wrap; /* Permite quebras em telas menores */
+}
+
+.rodape-institucional, .rodape-links, .rodape-social {
+    
+    width: 30%; /* Distribuição em 3 colunas */
+    min-width: 250px; /* Para garantir que não fiquem muito estreitos */
+    margin-bottom: 20px;
+    color: #a71559
+}
+
+.rodape-conteudo h3 {
+    color: #a71559;
+    margin-bottom: 15px;
+    border-bottom: 2px solid cornsilk;
+    padding-bottom: 5px;
+    font-size: 1.1em;
+}
+
+.rodape-institucional p, .rodape-links li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.rodape-links ul {
+    list-style: none;
+}
+
+.rodape-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo dos ícones sociais */
+.social-icones a {
+    display: block; /* Cada link em uma nova linha */
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+.social-icones a:hover {
+    color: #fff; /* Muda a cor ao passar o mouse */
+}
+
+/* Direitos Autorais (Barra Inferior) */
+.rodape-direitos {
+    background-color: #a71559; /* Cor mais escura para a barra de direitos */
+    text-align: center;
+    padding: 15px 20px;
+    border-top: 1px solid #a71559;
+}
+
+/* Media Query para Responsividade em dispositivos menores */
+@media (max-width: 768px) {
+    .rodape-conteudo {
+        flex-direction: column; /* Empilha as colunas verticalmente */
+        align-items: center;
+        text-align: center;
+    }
+
+    .rodape-institucional, .rodape-links, .rodape-social {
+        width: 90%; 
+        margin-bottom: 25px;
+    }
+    
+    .rodape-links ul {
+        padding-left: 0;
+    }
+}
