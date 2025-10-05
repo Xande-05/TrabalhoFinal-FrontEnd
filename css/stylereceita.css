@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* cabeçalho */
+header {
+    background-color: #a71559;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 3px solid #a71559;
+}
+
+/* Container */
+.container {
+    background-color: cornsilk;   
+    min-height: 60vh; 
+    padding: 50px;
+}
+
+/* Grid de produtos */
+.products-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card {
+    width: 31%;
+    display: inline-block;
+    margin: 1% 1%;
+    padding: 15px;
+    background: cornsilk;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.product-image {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 10px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#imag-1 {
+    background-image: url("../img/bolo.jpg");
+}
+
+#imag-2 {
+    background-image: url("../img/lasanha.png");
+}
+
+#imag-3 {
+    background-image: url("../img/salada.png");
+}
+
+#imag-4 {
+    background-image: url("../img/pao.png");
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #a71559;
+    border-left: 5px;
+    padding-left: 7px;
+    font-size: 24px;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.btn {
+  display: block;  
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #a71559;
+  color: cornsilk;
+  padding: 15px;
+  border-radius: 5px;
+  transition: .5s;
+  text-decoration: none;
+}
+
+btn:hover {
+    background-color: #a71559;
+}
+
+.receita-card {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    background: cornsilk;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+}
+.receita-card .product-image {
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.receita-text {
+    flex: 1;
+}
+
+.receita-text h4 {
+    margin: 15px 0 5px;
+    color: #a71559;
+}
+nav {
+    display: flexbox;
+    justify-content: center;
+}
+nav ul {
+     display: flexbox;
+    list-style: none;
+}
+
+@media (max-width: 768px) {
+    .recipe-card {
+        flex-direction: column;
+        align-items: center;
+    }
+    .recipe-card .product-image {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #a71559;
+    color:cornsilk
+    border-top: 3px solid #a71559;
+    text-align: center;
+    padding: 40px;
+}
+
