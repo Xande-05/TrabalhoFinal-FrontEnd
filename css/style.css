@@ -82,7 +82,7 @@ a {
     border-color: #a71559; /* Borda da mesma cor do fundo */
 }
 /* 1. Estilizando o Link Básico para remover o sublinhado padrão */
-/* Você pode precisar ajustar o seletor (ex: .nav-principal a) */
+/* ajustar o seletor */
 ul a {
     text-decoration: none; /* Remove o sublinhado */
     color: #444;          /* Garante uma cor escura, troque se necessário */
@@ -169,13 +169,13 @@ ul a:active {
 .titulo-animado {
     font-size: 2.5em;
     margin-bottom: 10px;
-    /* Aplica a animação: 1.5s de duração, ease-out, só uma vez, atraso de 0.5s */
+    /* Aplica a animação: 1.5s de duração,só uma vez, atraso de 0.5s */
     animation: fadeInDown 1.5s ease-out 0.5s forwards; 
 }
 
 .subtitulo-animado {
     font-size: 1.3em;
-    /* Aplica a animação: 1.5s de duração, ease-out, só uma vez, atraso de 1.5s (depois do título) */
+    /* Aplica a animação: 1.5s de duração, só uma vez, atraso de 1.5s (depois do título) */
     animation: fadeInDown 1.5s ease-out 1.5s forwards;
 }
 

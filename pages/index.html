@@ -1,24 +1,24 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--Define o tipo de documento como HTML5. É fundamental para que o navegador saiba como interpretar o código.-->
 <html lang="pt-br">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog do Alê - Culinária, Receitas e Cursos</title>
-    <link rel="stylesheet" href="../css/style.css">
+<head> <!--Contém metadados sobre o documento (invisível).-->
+    <meta charset="UTF-8"> <!--codificação de caracteres-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Configura a visualização em dispositivos móveis (responsividade). Diz ao navegador para definir a largura da página igual à largura da tela do dispositivo-->
+    <title>Blog do Alê - Culinária, Receitas e Cursos</title> <!--título que aparece na aba-->
+    <link rel="stylesheet" href="../css/style.css"> <!--Vincula o css. ../diz que tá no diretorio anterior-->
 </head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"> <!--Vincula a biblioteca Font Awesome, que fornece os ícones usados no menu de navegação e no rodapé-->
 
 <body>
 
     <header class="cabecalho">
-        <div class="logo">Blog do Alê</div>
-        <nav class="menu">
+        <div class="logo">Blog do Alê</div> <!--criei uma div pra exibir o nome do blog-->
+        <nav class="menu"> <!--seção de navegação, menu principal. Defini a classe menu-->
             <ul>
-                <ul>
-                    <li>
-                        <a href="home.html"target=" blank">
-                            <i class="fa-solid fa-house"></i> Home
+                <ul> <!--lista desordenada pros itens do menu-->
+                    <li> <!--cada li é um item do menu-->
+                        <a href="home.html"target=" blank"> <!--target blanck é pra abrir em nova aba-->
+                            <i class="fa-solid fa-house"></i> Home <!--tag i exibe os ícones-->
                         </a>
                     </li>
                     <li>
@@ -41,8 +41,8 @@
         </nav>
     </header>
 
-    <main class="home">
-        <section class="banner-principal">
+    <main class="home"> <!--conteúdo principal e exclusivo da página (neste caso, a página Home). A classe home é para estilização.-->
+        <section class="banner-principal"> <!--Define uma seção que atua como o banner principal.-->
             <img src="../img/vanilla_cupcake_featured_blog.webp" alt="Banner principal: Prato de dar água na boca"
                 class="imagem-banner">
 
@@ -56,7 +56,7 @@
 
         <section class="destaques">
             <h2>Nossos Destaques</h2>
-            <div class="card">
+            <div class="card"> <!--Cria um card (bloco de conteúdo) para o destaque.-->
                 <h3>Receita do Dia:</h3>
                 <p>Aquele brownie rápido e fácil de fazer!</p></p>
                 <a href="docedodia.html"target=" blank"><u>Confira aqui</u></a>
@@ -96,8 +96,8 @@
 
         </div>
 
-        <div class="rodape-direitos">
-            <p>&copy; 2025 Blog do Alê. Todos os direitos reservados. | Desenvolvido por Alexandre Lício, Jéssica Toledo, João Pedro e Simone Martins.</p>
+        <div class="rodape-direitos"> 
+            <p>&copy; 2025 Blog do Alê. Todos os direitos reservados. | Desenvolvido por Alexandre Lício, Jéssica Toledo, João Pedro e Simone Martins.</p> <!--O texto de copyright com a entidade &copy; para o símbolo '©'.-->
         </div>
     </footer>
 
