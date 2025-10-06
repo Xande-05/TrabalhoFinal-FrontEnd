@@ -274,33 +274,48 @@ ul a:active {
     color: #a71559;
 }
 
+
 .imagem{
-    position: absolute;
+    margin-left: 320px;
     border-bottom: 4px solid #a71559;
+    
+    border-style: dotted;
 }
 
 .layout-video{
     position: absolute;
-    top: 320px;
-    left: 0;
+    top: 335px;
+    /* right: 8px; */
     border: 1px solid #a71559;
     height: 640px;
     width: 100%;
 }
 
 .video-background{
-    display: inline;
+    display: flex;
+}
+
+iframe{
+    justify-content: flex-end;
+}
+
+.layout__apresentacao{
+    margin-top: 50px;
 }
 
 .apresentacao{
+    width: 50%;
+    justify-content: flex-end;
     position: absolute;
-    display: inline;
+    display: block;
     right: 50px;
 }
 
-.apresentacao > li{
+.apresentacao > ul{
+    /* margin-top: 5px; */
+    font-size: 21px;
     display: inline;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100px;
 }
 .titulo{
@@ -312,4 +327,21 @@ ul a:active {
 
 }
 
+.secao-form{
+    height: 500px;
+}
+
+
+.layout-assinatura {
+  padding: 160px;
+  background-color: antiquewhite;
+}
+
+.botao{
+    margin-top: 10px;
+    width: 85px;
+    border-radius: 10px;
+    color: antiquewhite;
+    background-color: #a71559;
+}
 

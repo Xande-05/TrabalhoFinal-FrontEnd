@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog do Alê - Culinária, Receitas e Cursos</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    
   </head>
   <link
     rel="stylesheet"
@@ -64,7 +65,7 @@
       </section>
 
       <section class="secao-curso">
-        <div class="container">
+      
           <div class="imagem">
             <img src="../img/Inserir um subtítulo.png" alt="" />
           </div>
@@ -72,6 +73,7 @@
           <div class="layout-video">
             <div class="video-background">
                 <iframe
+                  style="margin-top: 20px; margin-left: 30px;"
                   width="30%"
                   height="580"
                   src="https://www.youtube.com/embed/JS3KHZkbliE"
@@ -81,6 +83,7 @@
                   allowfullscreen
                 >
                 </iframe>
+                <div class="layout__apresentacao">
                 <div class="apresentacao">
                     <h1 class="titulo">🍰 Sua Transformação Começa Aqui!</h1>
                     <h3>
@@ -95,14 +98,62 @@
                         <li>Certificado Profissional: Reconhecimento no mercado. Ao concluir, receba um certificado que atesta sua nova qualificação e abre portas para novas oportunidades.</li>
                     </ul>
                 </div>
+              </div>
 
               </div>
             </div>
 
             
           </div>
-        </div>
+        
       </section>
+
+      <div class="layout-assinatura">
+      <div class="container">
+        <div class="titulo-formulario">
+          <h1>Assinatura do Curso</h1>
+
+          <form method="post" class="form">
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <label for="nome" class="form-label">Nome:</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  class="form-control"
+                  placeholder="Digite o seu nome"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-12">
+                <label for="email" class="form-label">Email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-4 col-md-4">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input
+                  type="text"
+                  id="telefone"
+                  name="telefone"
+                  class="form-control"
+                />
+              </div>
+            </div>
+
+            <button class="botao" type="submit">Enviar</button>
+
     </main>
 
     <footer class="rodape">
@@ -162,5 +213,8 @@
         </p>
       </div>
     </footer>
+
+<script src="../js/intro.js"></script>
+
   </body>
 </html>
