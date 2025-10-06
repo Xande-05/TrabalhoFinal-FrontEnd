@@ -7,6 +7,18 @@ body {
   display: block;
   margin: 0 auto;
 }
+.grupo{
+    margin: 0 auto;
+    width: 80%;
+    border-bottom: 4px solid #a71559;
+    border-style: dotted;
+}
+.xande{
+    margin: 0 auto;
+    width: 55%;
+    border-bottom: 4px solid #a71559;
+    border-style: dotted;
+}
 
 /* --- RODAPÉ ESTILIZADO (NOVO) --- */
 .rodape {
